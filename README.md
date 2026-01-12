@@ -20,11 +20,108 @@ Adicionalmente al código producto del desarrollo de este proyecto también se h
 
 # Clase 1
 
+*LECCIÓN 1*
+
+
+https://github.com/user-attachments/assets/ef41fae7-ed97-4637-b8c8-3e308a809b19
+
+
+
+*LECCIÓN 2*
+
+
+https://github.com/user-attachments/assets/7a13c3df-4abb-4012-a7bf-b9b36c02832c
+
+
 
 # Clase 2
+
+*LECCIÓN 1*
+
+
+https://github.com/user-attachments/assets/ae275c73-3f09-42a6-8905-f7ab91232ad9
+
+
+
+*LECCIÓN 2*
+
+
+https://github.com/user-attachments/assets/040df8fe-aa6c-4348-919a-b0853fe1eace
+
+
+
 # Clase 3
+
+*LECCIÓN 1*
+
+
+https://github.com/user-attachments/assets/95989c4a-baab-4079-8efd-e8ddd76b62b4
+
+
+
+*LECCIÓN 2*
+
+
+https://github.com/user-attachments/assets/f5f63eb5-2afe-44fb-b57c-add2cdeff22e
+
+
+
 # Clase 4
+
+*LECCIÓN 1*
+
+
+https://github.com/user-attachments/assets/2bfb95f4-c132-4558-884c-38c6e484d581
+
+
+
+*LECCIÓN 2*
+
+
+https://github.com/user-attachments/assets/19282f28-5dff-4b90-9175-e49a532a992b
+
+
+
 # Clase 5
+
+*LECCIÓN 1*
+
+
+https://github.com/user-attachments/assets/d3204772-90e0-40ff-95c1-97f67220a811
+
+
+
+*LECCIÓN 2*
+
+
+https://github.com/user-attachments/assets/6cb2f313-5a1f-4d7a-abec-9fa6e98b701b
+
+
+
 # Clase 6
+
+*LECCIÓN 1*
+
+*LECCIÓN 2*
+
 # Clase 7
+
+*LECCIÓN 1*
+
+
+https://github.com/user-attachments/assets/02a304c6-24fb-4177-8e0c-9331199e0b79
+
+
+
+*LECCIÓN 2*
+
+
+https://github.com/user-attachments/assets/d829d300-3c81-435d-8e52-2f3c760110f4
+
+
+
 # Clase 8
+
+*LECCIÓN 1*
+
+*LECCIÓN 2*
