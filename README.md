@@ -16,7 +16,7 @@ Las tecnologías a emplear son las siguientes:
 - Para backend: Node.js
 
 # Videotutoriales
-Adicionalmente al código producto del desarrollo de este proyecto también se han generado una serie de tutoriales en formato video para enseñar el proceso de elaboración de la aplicación. Estos videos se dividirá por clases de la 1 a la 16.
+Adicionalmente al código producto del desarrollo de este proyecto también se han generado una serie de tutoriales en formato video para enseñar el proceso de elaboración de la aplicación. Estos videos se dividirá por clases de la 1 a la 8, teniendo en principio 2 lecciones por clase.
 
 # Clase 1
 
@@ -28,12 +28,3 @@ Adicionalmente al código producto del desarrollo de este proyecto también se h
 # Clase 6
 # Clase 7
 # Clase 8
-# Clase 9
-# Clase 10
-# Clase 11
-# Clase 12
-# Clase 13
-# Clase 14
-# Clase 15
-# Clase 16
-# Clase 17
