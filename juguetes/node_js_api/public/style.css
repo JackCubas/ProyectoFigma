@@ -1,8 +1,0 @@
-/* Lightweight theme for embedded pages — matches main project theme */
-:root{
-	--bg:#f7f7f8; --surface:#fff; --text:#0f1722; --muted:#6b7280; --accent:#2563eb; --radius:8px;
-}
-html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
-.container{max-width:1100px;margin:0 auto;padding:1rem}
-a{color:var(--accent);text-decoration:none}
-button{padding:.5rem .75rem;border-radius:6px;border:none;background:var(--accent);color:#fff;cursor:pointer}

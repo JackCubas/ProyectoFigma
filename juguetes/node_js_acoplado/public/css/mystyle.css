@@ -1,3 +1,0 @@
-/* Align with project theme */
-:root{--bg:#f7f7f8;--text:#0f1722}
-body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,Helvetica,Arial}
