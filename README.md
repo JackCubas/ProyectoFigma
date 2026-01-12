@@ -101,9 +101,9 @@ https://github.com/user-attachments/assets/6cb2f313-5a1f-4d7a-abec-9fa6e98b701b
 # Clase 6
 
 *LECCIÓN 1*
-
+Retirado temporalmente
 *LECCIÓN 2*
-
+Retirado temporalmente
 # Clase 7
 
 *LECCIÓN 1*
