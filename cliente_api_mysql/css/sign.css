@@ -1,34 +1,57 @@
+/* Signature page: clean, centered card with subtle controls */
 #signature-body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
+    min-height: 100vh;
+    background: var(--bg, #f7f7f8);
     margin: 0;
+    padding: 2rem;
 }
 
 .signature-container {
+    width: 100%;
+    max-width: 720px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 90%;
-    max-width: 600px;
+    gap: 1rem;
+    background: var(--surface, #fff);
+    border-radius: 12px;
+    padding: 1.25rem;
+    box-shadow: 0 10px 30px rgba(16,24,40,0.06);
 }
 
 canvas {
-    border: 1px solid #000;
-    background-color: #fff;
     width: 100%;
-    height: auto;
+    height: 320px;
+    border-radius: 8px;
+    background: #fff;
+    border: 1px solid rgba(15,23,34,0.06);
+    box-shadow: inset 0 -1px 0 rgba(15,23,34,0.03);
 }
 
 .controls {
-    margin-top: 10px;
     display: flex;
-    gap: 10px;
+    gap: .5rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 button, select {
-    padding: 5px 10px;
+    padding: .5rem .75rem;
+    border-radius: 8px;
+    border: 1px solid rgba(15,23,34,0.06);
+    background: transparent;
     cursor: pointer;
+    color: var(--text, #0f1722);
+    transition: background .12s, transform .08s;
+}
+button.primary { background: var(--accent, #2563eb); color: #fff; border: none; }
+button:hover { transform: translateY(-1px); box-shadow: 0 6px 18px rgba(16,24,40,0.06); }
+
+.note { color: var(--muted, #6b7280); font-size: .9rem; }
+
+@media (max-width: 640px) {
+    canvas { height: 220px; }
+    .controls { justify-content: center; }
 }
