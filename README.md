@@ -109,14 +109,14 @@ https://github.com/user-attachments/assets/6cb2f313-5a1f-4d7a-abec-9fa6e98b701b
 *LECCIÓN 1*
 
 
-https://github.com/user-attachments/assets/02a304c6-24fb-4177-8e0c-9331199e0b79
+https://github.com/user-attachments/assets/5f2e73e4-60be-4f9d-9f12-8313bdf9c714
 
 
 
 *LECCIÓN 2*
 
 
-https://github.com/user-attachments/assets/d829d300-3c81-435d-8e52-2f3c760110f4
+https://github.com/user-attachments/assets/f94273df-6610-40d5-ad3d-79c947ef6b4b
 
 
 
