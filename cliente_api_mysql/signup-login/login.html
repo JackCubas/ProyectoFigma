@@ -1,0 +1,31 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>PDP</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.js"></script>
+    </head>
+    <body>
+        <h1>
+            This is the login page.
+        </h1>
+        <div class="create-blog content">
+            <form id="form">
+                <!-- action="/moviesCreate" method="POST"  -->
+                <lable for="emailUser">Email:</lable>
+                <input type="text" id="emailUser" name="emailUser" maxlength="50" required>
+                <lable for="passUser">Pass:</lable>
+                <input type="password" id="passUser" name="passUser" maxlength="50" minlength="6" required>
+            </form>
+            <div id="button-container">
+      
+            </div>
+
+            <button onclick="location.href='../index.html'" type="button">Cancel</button>
+        </div>
+
+        <script src="login.js"></script>
+
+    </body>
+</html>

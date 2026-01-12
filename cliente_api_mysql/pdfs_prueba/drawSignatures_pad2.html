@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature Pad</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.16.0/pdf-lib.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/signature_pad@4.0.0/dist/signature_pad.umd.min.js"></script>
+    <link rel="stylesheet" href="../css/test/signature-pad2.css">
+</head>
+<body>
+    <div class="signature-container">
+        <canvas id="signature-pad" width="400" height="200"></canvas>
+        <div class="controls">
+            <select id="stroke-style">
+                <option value="pen">Pen</option>
+                <option value="brush">Brush</option>
+            </select>
+            <button id="clear">Clear</button>
+            <button id="export-png">Export as PNG</button>
+            <button id="export-jpeg">Export as JPEG</button>
+        </div>
+    </div>
+    <button onclick="saveSignatureAndInsertIntoPDF()">Save Signature and Insert into PDF</button>
+    <button onclick="saveToServer()">Save to Server</button>
+    <script src="drawSignatures_pad2.js"></script>
+</body>
+</html>

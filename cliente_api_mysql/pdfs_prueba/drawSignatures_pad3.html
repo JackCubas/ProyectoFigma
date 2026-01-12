@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Signature Pad</title>
+    <link rel="stylesheet" href="../css/test/signature-pad3.css">
+    <script src="https://cdn.jsdelivr.net/npm/signature_pad@4.1.7/dist/signature_pad.umd.min.js"></script>
+    <!-- Include pdf-lib library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.16.0/pdf-lib.min.js"></script>
+</head>
+<body>
+    <div class="signature-container">
+        <canvas id="signature-pad" width="400" height="200"></canvas>
+        <div class="controls">
+            <button id="undo">Undo</button>
+            <button id="redo">Redo</button>
+            <button id="clear">Clear</button>
+            <button id="save-png">Save as PNG</button>
+            <button id="save-jpeg">Save as JPEG</button>
+            <!-- Add a button to trigger signature saving and insertion -->
+            <button onclick="saveSignatureAndInsertIntoPDF()">Save Signature and Insert into PDF</button>
+        </div>
+    </div>
+    <script src="drawSignatures_pad3.js"></script>
+</body>
+</html>

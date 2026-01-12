@@ -1,0 +1,24 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>PDP | <%= title  %></title>
+    </head>
+    <body>
+        <h1>
+            Home - ejs
+        </h1>
+        <h2>
+            All blogs
+        </h2>
+
+        <% if(blogs.length > 0) { %>
+            <% blogs.forEach(blog => { %>
+                <h3 class="title"><%= blog.title  %></h3>
+                <p class="snippet"><%= blog.snippet  %></p>
+            <% }) %>
+        <% } else { %>
+                <p>There are no blogs to display</p>
+        <% } %>    
+    </body>
+</html>

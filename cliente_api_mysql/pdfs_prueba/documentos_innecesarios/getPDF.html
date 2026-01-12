@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- Include Signature Pad library -->
+    <script src="https://cdn.jsdelivr.net/npm/signature_pad@4.0.0/dist/signature_pad.umd.min.js"></script>
+    <!-- Include pdf-lib library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.16.0/pdf-lib.min.js"></script>
+    <script src="https://unpkg.com/pdf-lib@1.4.0"></script>
+    <script src="https://unpkg.com/downloadjs@1.4.7"></script>
+  <title>Get PDFs</title>
+</head>
+<body>
+  <h1>Como Manipular PDFs</h1>
+
+  <main id="main-container">
+    <div class="create-blog content">
+        <form id="form" onsubmit="sendData()">
+            <button onclick=sendData()>Get PDFs</button>
+        </form>
+        <button onclick="location.href='pdf.html'" type="button">Cancel</button>
+    </div>
+    
+  </main>
+
+  <script src="getPDF.js"></script>
+
+
+</body>
+</html>

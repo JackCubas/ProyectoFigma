@@ -1,0 +1,40 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>PDP</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.js"></script>
+    </head>
+    <body>
+        <h1>
+            This is the signup page.
+        </h1>
+        <div class="create-blog content">
+            <form id="form">
+                <!-- action="/moviesCreate" method="POST"  -->
+                <lable for="nameUser">Name:</lable>
+                <input type="text" id="nameUser" name="nameUser" maxlength="50" minlength="2" required>
+                <lable for="emailUser">Email:</lable>
+                <input type="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" id="emailUser" name="emailUser" maxlength="50" required>
+                <lable for="passUser">Pass:</lable>
+                <input type="password" id="passUser" name="passUser" maxlength="50" minlength="6" required>
+                <lable for="passUserRepeat">Repeat Pass:</lable>
+                <input type="password" id="passUserRepeat" name="passUserRepeat" maxlength="50" minlength="6" required>
+                <select id="rolUser" name="rolUser">
+                    <option value="CLIENT">CLIENT</option>
+                    <option value="FIRMA">FIRMA</option>
+                </select>
+                <lable for="dniUser">DNI:</lable>
+                <input type="text" pattern="[0-9]{8}[A-Za-z]{1}" id="dniUser" name="dniUser" maxlength="9" minlength="9" required>
+            </form>
+            <div id="button-container">
+      
+            </div>
+            <button onclick="location.href='../index.html'" type="button">Cancel</button>
+        </div>
+
+        <script src="signup.js"></script>
+
+    </body>
+</html>

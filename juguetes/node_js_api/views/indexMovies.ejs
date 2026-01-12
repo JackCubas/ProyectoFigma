@@ -1,0 +1,25 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>PDP | <%= title  %></title>
+    </head>
+    <body>
+        <h1>
+            Home - ejs
+        </h1>
+        <h2>
+            All movies
+        </h2>
+
+        <% if(movies.length > 0) { %>
+            <% movies.forEach(movie => { %>
+                <h3 class="prodId"><%= movie.prodId  %></h3>
+                <p class="price"><%= movie.price  %></p>
+                <p class="quantity"><%= movie.quantity %></p>
+            <% }) %>
+        <% } else { %>
+                <p>There are no movies to display</p>
+        <% } %>    
+    </body>
+</html>

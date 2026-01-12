@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Signature Capture</title>
+    <!-- Include Signature Pad library -->
+    <script src="https://cdn.jsdelivr.net/npm/signature_pad@4.0.0/dist/signature_pad.umd.min.js"></script>
+    <!-- Include pdf-lib library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.16.0/pdf-lib.min.js"></script>
+  </head>
+  <body>
+    <!-- Placeholder for PDF display -->
+    <div id="pdfViewer"></div>
+    <!-- Signature Canvas -->
+    <canvas id="signatureCanvas" width="400" height="200"></canvas>
+    <!-- Add a button to trigger signature saving and insertion -->
+    <button onclick="saveSignatureAndInsertIntoPDF()">
+      Save Signature and Insert into PDF
+    </button>
+   <script src="drawSignatures.js"></script>
+  </body>
+</html>

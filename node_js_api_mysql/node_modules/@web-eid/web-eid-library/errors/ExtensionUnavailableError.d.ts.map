@@ -1,0 +1,1 @@
+{"version":3,"file":"ExtensionUnavailableError.d.ts","sourceRoot":"","sources":["../../../src/errors/ExtensionUnavailableError.ts"],"names":[],"mappings":"AAsBA,OAAO,SAAS,MAAM,aAAa,CAAC;AAEpC,MAAM,CAAC,OAAO,OAAO,yBAA0B,SAAQ,KAAK;IACnD,IAAI,EAAE,SAAS,CAAC;gBAEX,OAAO,SAAuC;CAM3D"}

@@ -1,0 +1,8 @@
+http-server --proxy http://localhost:8080?
+
+ngrok http 8080
+
+'steve@gmail.com','stevePass', 'ADMIN'
+'david1@gmail.com','david1Pass','CLIENT'
+'luis@gmail.com','luisPass','CLIENT'
+'robert@gmail.com','robertPass','FIRMA'

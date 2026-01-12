@@ -1,0 +1,57 @@
+<!-- home.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+        <!-- Text from EJS variable 
+            passed from server -->
+        <h2>
+            Text from EJS variable passed
+            from server is =
+        </h2>
+        <h2 style="color:red">
+            <%=name%>
+        </h2>
+        <br>
+
+        <!-- Text from EJS variable 
+            passed from script tag -->
+        <h2 style="color: blue;">
+            Text from EJS variable passed
+            from script tag =
+        </h2>
+        <h2 style="color: blue;" id="text_from_script">
+        </h2>
+        <br>
+
+        <!-- Text from EJS variable passed 
+            from script tag after manipulation -->
+        <h2 style="color: green;">
+            Text from EJS variable passed from
+            script tag after manipulation =
+        </h2>
+        <h2 style="color: green;" 
+            id="text_from_script_manipulated">
+        </h2>
+
+    <script>
+        let name = '<%-name%>'
+        let heading = document
+            .getElementById('text_from_script');
+
+        heading.innerText = name;
+        name = "Mr. " + name;
+        let heading_man = document.getElementById(
+            'text_from_script_manipulated');
+        heading_man.innerText = name; 
+    </script>
+</body>
+
+</html>

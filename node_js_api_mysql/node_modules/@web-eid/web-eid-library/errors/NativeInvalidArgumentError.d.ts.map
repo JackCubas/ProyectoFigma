@@ -1,0 +1,1 @@
+{"version":3,"file":"NativeInvalidArgumentError.d.ts","sourceRoot":"","sources":["../../../src/errors/NativeInvalidArgumentError.ts"],"names":[],"mappings":"AAsBA,OAAO,SAAS,MAAM,aAAa,CAAC;AAEpC,MAAM,CAAC,OAAO,OAAO,0BAA2B,SAAQ,KAAK;IACpD,IAAI,EAAE,SAAS,CAAC;gBAEX,OAAO,SAAoD;CAMxE"}

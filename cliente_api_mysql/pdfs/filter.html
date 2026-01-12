@@ -1,0 +1,42 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>PDP</title>
+    </head>
+    <body>
+        <h1>
+            This is the filter page.
+        </h1>
+        <div class="create-blog content">
+            <form id="form" onsubmit="sendData()">
+                <!-- action="/moviesCreate" method="POST"  -->
+                <lable for="emailUser">Email:</lable>
+                <input type="text" id="emailUser" name="emailUser">
+                <lable for="nameUser">User name:</lable>
+                <input type="text" id="nameUser" name="nameUser">
+                <lable for="docName">Document name:</lable>
+                <input type="text" id="docName" name="docName">
+                <lable for="estado">Estado:</lable>
+                <input type="text" id="estado" name="estado">
+                <button>Submit</button>
+            </form>
+            <button onclick="location.href='table.html?page=1'" type="button">Cancel</button>
+        </div>
+
+        <main id="main-container">
+            
+        </main>
+
+        <table id="mytable">
+            <thead>
+            <tr><th>Doc Name</th><th>User Name</th><th>Estado</th><th>Action</th></tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <script src="filter.js"></script>
+
+    </body>
+</html>

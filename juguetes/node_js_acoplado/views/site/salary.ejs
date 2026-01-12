@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee Salary</title>
+  <style>
+    table {
+    margin: 20% auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 20%;
+    border: 1px solid #ddd;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 16px;
+  }
+  
+  tr:nth-child(even) {
+   background-color: #d1d1d1;
+  }
+  </style>
+</head>
+<body>
+    <table>
+      <tr>
+           <th> Employee </th>
+          <th> Salary </th>
+      </tr>
+
+      <% empSalary.forEach(emp => { %>
+              <tr>
+                  <td> <%= emp.name %>
+                  <td> <%= emp.salary %>
+              </tr>
+      <% }); %> 
+
+     </table>
+</body>
+</html>

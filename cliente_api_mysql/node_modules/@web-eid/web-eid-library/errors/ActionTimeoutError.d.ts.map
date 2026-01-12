@@ -1,0 +1,1 @@
+{"version":3,"file":"ActionTimeoutError.d.ts","sourceRoot":"","sources":["../../../src/errors/ActionTimeoutError.ts"],"names":[],"mappings":"AAsBA,OAAO,SAAS,MAAM,aAAa,CAAC;AAEpC,MAAM,CAAC,OAAO,OAAO,kBAAmB,SAAQ,KAAK;IAC5C,IAAI,EAAE,SAAS,CAAC;gBAEX,OAAO,SAA8B;CAMlD"}

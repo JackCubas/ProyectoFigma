@@ -1,0 +1,105 @@
+<html>
+  <head>
+    <title>Signature Capture</title>
+    <!-- Include Signature Pad library -->
+    <script src="https://cdn.jsdelivr.net/npm/signature_pad@4.0.0/dist/signature_pad.umd.min.js"></script>
+    <!-- Include pdf-lib library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.16.0/pdf-lib.min.js"></script>
+  </head>
+  <body>
+    <!-- Placeholder for PDF display -->
+    <div id="pdfViewer"></div>
+    <!-- Signature Canvas -->
+    <canvas id="signatureCanvas" width="400" height="200"></canvas>
+    <!-- Add a button to trigger signature saving and insertion -->
+    <button onclick="saveSignatureAndInsertIntoPDF()">
+      Save Signature and Insert into PDF
+    </button>
+    <script>
+      // JavaScript code will be added here.
+      // Accessing the canvas element.
+        const signatureCanvas = document.getElementById("signatureCanvas");
+        const signaturePad = new SignaturePad(signatureCanvas);
+
+        // Function to save the signature as an image and insert it into the PDF.
+        async function saveSignatureAndInsertIntoPDF() {
+        const signatureDataUrl = signaturePad.toDataURL("image/png");
+        // You can now send this data to the server for processing or save it locally.
+        console.log(signatureDataUrl); // Log the signature data URL for demonstration purposes.
+
+        // Call the function to insert the signature into the PDF.
+        const modifiedPDFBytes = await insertSignatureIntoPDF(signatureDataUrl);
+
+        // Download the modified PDF with the inserted signature.
+        downloadModifiedPDF(modifiedPDFBytes);
+        }
+
+        // Function to insert the signature into the PDF.
+        async function insertSignatureIntoPDF(signatureDataURL) {
+        const pdfBytes = await fetch("document.pdf").then((res) => res.arrayBuffer());
+        const pdfDoc = await PDFLib.PDFDocument.load(pdfBytes);
+
+        // Convert the data URL to a `Uint8Array`.
+        const signatureImageArray = dataURLToUint8Array(signatureDataURL);
+
+        // Embed the signature image as a custom image.
+        const signatureImage = await pdfDoc.embedPng(signatureImageArray);
+        const { width, height } = signatureImage;
+
+        const pages = pdfDoc.getPages();
+        const firstPage = pages[0];
+
+        const x = firstPage.getWidth() - 100 - width; // Adjust the value 100 for the horizontal position.
+        const y = firstPage.getHeight() - 100 - height; // Adjust the value 100 for the vertical position.
+
+        // Add the signature image to the first page at the desired location.
+        firstPage.drawImage(signatureImage, {
+            x: x,
+            y: y,
+            width: width,
+            height: height,
+        });
+
+        // Save the modified PDF.
+        const modifiedPDFBytes = await pdfDoc.save();
+        return modifiedPDFBytes;
+        }
+
+        // Function to convert data URL to a `Uint8Array`.
+        function dataURLToUint8Array(dataURL) {
+        // Extract the Base64-encoded data from the data URL.
+        const base64 = dataURL.split(",")[1];
+
+        // Decode the Base64-encoded data into a binary string.
+        const binaryString = atob(base64);
+
+        // Create a new `Uint8Array` with the length of the binary string.
+        const array = new Uint8Array(binaryString.length);
+
+        // Iterate through the binary string and convert each character to a number and store it in the `Uint8Array`.
+        for (let i = 0; i < binaryString.length; i++) {
+            array[i] = binaryString.charCodeAt(i);
+        }
+        return array;
+        }
+
+        // Function to trigger the download of the modified PDF.
+        function downloadModifiedPDF(modifiedPDFBytes) {
+        const blob = new Blob([modifiedPDFBytes], {
+            type: "application/pdf",
+        });
+        const url = URL.createObjectURL(blob);
+
+        // Create a link element to trigger the download.
+        const downloadLink = document.createElement("a");
+        downloadLink.href = url;
+        downloadLink.download = "modified_document.pdf"; // Specify the filename for the downloaded PDF.
+
+        // Append the link to the body and click it to trigger the download.
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+        document.body.removeChild(downloadLink);
+        }
+    </script>
+  </body>
+</html>

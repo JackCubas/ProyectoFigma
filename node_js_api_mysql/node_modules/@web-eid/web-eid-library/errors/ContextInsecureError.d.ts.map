@@ -1,0 +1,1 @@
+{"version":3,"file":"ContextInsecureError.d.ts","sourceRoot":"","sources":["../../../src/errors/ContextInsecureError.ts"],"names":[],"mappings":"AAsBA,OAAO,SAAS,MAAM,aAAa,CAAC;AAIpC,MAAM,CAAC,OAAO,OAAO,oBAAqB,SAAQ,KAAK;IAC9C,IAAI,EAAE,SAAS,CAAC;gBAEX,OAAO,SAA6D;CAMjF"}

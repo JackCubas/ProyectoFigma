@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firma Segura APP</title>
+</head>
+<body>
+    <h1>
+        This is the user stamp page.
+    </h1>
+
+    <main id="main-container">
+        <!-- main page content -->
+    </main>
+
+    <div hidden id="loader"><h1 style="color: #ff00ff;">LOADING...</h1></div>
+
+    <form hidden id="stampSelect" onsubmit="createStamp()" method="POST" accept-charset="utf-8" enctype="multipart/form-data">
+        <p>
+        Select a file jpg or png file:
+        </p>
+        <input type="file" id="file" />
+    </form>
+
+    <button id="createStamp" onclick=createStamp()>Create Stamp</button>
+    <button id="deleteStamp" onclick=deleteStamp()>Delete</button>
+
+    <button onclick="location.href='table.html?page=1'" type="button">Cancel</button>
+<script src="stampControl.js"></script>
+</body>
+</html>

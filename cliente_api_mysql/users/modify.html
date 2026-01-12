@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Firma Segura APP</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.js"></script>
+</head>
+<body>
+  <p>MODIFY</p>
+
+    <h1>
+        This is the modify users page.
+    </h1>
+    <div class="create-blog content">
+        <form id="form">
+            <lable for="nameUser">Name:</lable>
+            <input type="text" id="nameUser" name="nameUser" maxlength="50" minlength="2" required>
+            <lable for="emailUser">Email:</lable>
+            <input type="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" id="emailUser" name="emailUser" maxlength="50" required>
+            <lable for="passUser">Pass:</lable>
+            <input type="password" id="passUser" name="passUser" maxlength="50" minlength="6" required>
+            <select id="rolUser" name="rolUser">
+                <option value="CLIENT">CLIENT</option>
+                <option value="FIRMA">FIRMA</option>
+                <option value="ADMIN">ADMIN</option>
+            </select>
+            <lable for="dniUser">DNI:</lable>
+            <input type="text" pattern="[0-9]{8}[A-Za-z]{1}" id="dniUser" name="dniUser" maxlength="9" minlength="9" required>
+            <!--<button>Submit</button>-->
+        </form>
+         <!-- <button onclick="location.href='table_pag.html?page=1'" type="button">Cancel</button>-->
+        <div id="button-container">
+      
+        </div>
+    </div>
+
+  <script src="modify.js"></script>
+
+</body>
+</html>

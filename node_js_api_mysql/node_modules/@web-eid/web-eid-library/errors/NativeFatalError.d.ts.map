@@ -1,0 +1,1 @@
+{"version":3,"file":"NativeFatalError.d.ts","sourceRoot":"","sources":["../../../src/errors/NativeFatalError.ts"],"names":[],"mappings":"AAsBA,OAAO,SAAS,MAAM,aAAa,CAAC;AAEpC,MAAM,CAAC,OAAO,OAAO,gBAAiB,SAAQ,KAAK;IAC1C,IAAI,EAAE,SAAS,CAAC;gBAEX,OAAO,SAAqD;CAMzE"}

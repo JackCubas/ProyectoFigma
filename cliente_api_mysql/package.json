@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@web-eid/web-eid-library": "^2.0.2",
+    "babelify": "^10.0.0",
+    "http-server": "^14.1.1",
+    "web-eid": "^0.0.8"
+  },
+  "devDependencies": {
+    "esmify": "^2.1.1"
+  }
+}

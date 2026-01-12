@@ -1,0 +1,1 @@
+{"version":3,"file":"UserTimeoutError.d.ts","sourceRoot":"","sources":["../../../src/errors/UserTimeoutError.ts"],"names":[],"mappings":"AAsBA,OAAO,SAAS,MAAM,aAAa,CAAC;AAEpC,MAAM,CAAC,OAAO,OAAO,gBAAiB,SAAQ,KAAK;IAC1C,IAAI,EAAE,SAAS,CAAC;gBAEX,OAAO,SAAmC;CAMvD"}

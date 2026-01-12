@@ -1,0 +1,1 @@
+{"version":3,"file":"NativeUnavailableError.d.ts","sourceRoot":"","sources":["../../../src/errors/NativeUnavailableError.ts"],"names":[],"mappings":"AAsBA,OAAO,SAAS,MAAM,aAAa,CAAC;AAEpC,MAAM,CAAC,OAAO,OAAO,sBAAuB,SAAQ,KAAK;IAChD,IAAI,EAAE,SAAS,CAAC;gBAEX,OAAO,SAAgD;CAMpE"}

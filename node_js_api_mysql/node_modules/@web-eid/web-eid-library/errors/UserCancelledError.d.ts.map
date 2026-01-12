@@ -1,0 +1,1 @@
+{"version":3,"file":"UserCancelledError.d.ts","sourceRoot":"","sources":["../../../src/errors/UserCancelledError.ts"],"names":[],"mappings":"AAsBA,OAAO,SAAS,MAAM,aAAa,CAAC;AAEpC,MAAM,CAAC,OAAO,OAAO,kBAAmB,SAAQ,KAAK;IAC5C,IAAI,EAAE,SAAS,CAAC;gBAEX,OAAO,SAAsC;CAM1D"}

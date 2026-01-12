@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="sendData()" method="POST" accept-charset="utf-8" enctype="multipart/form-data">
+        <div class="formgroup container-fluid">
+            <label for="name">Name</label>
+            <input id="name" type="text" name="name"/>
+        </div>
+        <p>
+        Select a file from your computer to being read as text.
+        </p>
+        <input type="file" id="file" />
+    </form>
+    <button onclick=sendData()>Submit</button>
+<script src="pdfImportServer.js"></script>
+</body>
+</html>
