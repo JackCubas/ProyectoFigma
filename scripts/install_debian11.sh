@@ -11,10 +11,10 @@ set -euo pipefail
 # - instala dependencias de todos los paquetes Node (busca package.json)
 # - crea DB/MySQL si hay SQL en node_js_api_mysql/firma_app.sql o .env
 
-PROJECT_ROOT="$(pwd)"
+INSTALL_DIR="/opt/ProyectoFigma"
 
 if [ "$EUID" -ne 0 ]; then
-  echo "Este script debe ejecutarse como root. Usa: sudo $0"
+  echo "Este script debe ejecutarse como root. Ejecuta: bash $0 (como root)"
   exit 1
 fi
 
@@ -31,12 +31,24 @@ apt-get install -y nodejs
 echo "==> Instalando pm2 global"
 npm install -g pm2 --no-fund --no-audit
 
+echo "==> Clonando código desde GitHub en $INSTALL_DIR"
+REPO_URL="https://github.com/JackCubas/ProyectoFigma.git"
+if [ -d "$INSTALL_DIR/.git" ]; then
+  echo "-> El repositorio ya existe en $INSTALL_DIR, actualizando (pull)"
+  git -C "$INSTALL_DIR" fetch --all --prune
+  git -C "$INSTALL_DIR" reset --hard origin/main || true
+else
+  rm -rf "$INSTALL_DIR"
+  git clone --depth 1 "$REPO_URL" "$INSTALL_DIR"
+fi
+
+PROJECT_ROOT="$INSTALL_DIR"
+
 echo "==> Instalando dependencias de todos los proyectos Node (buscando package.json)"
 find "$PROJECT_ROOT" -name package.json -not -path "*/node_modules/*" | while read -r pkg; do
   dir="$(dirname "$pkg")"
   echo "-> Instalando en: $dir"
   cd "$dir"
-  # prefer npm ci if lockfile present
   if [ -f package-lock.json ]; then
     npm ci --no-audit --no-fund || npm install --no-audit --no-fund
   else
