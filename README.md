@@ -124,4 +124,13 @@ https://github.com/user-attachments/assets/f94273df-6610-40d5-ad3d-79c947ef6b4b
 
 *LECCIÓN 1*
 
+
+https://github.com/user-attachments/assets/ee4757ab-f8a9-43e2-9181-83d3895622c6
+
+
+
 *LECCIÓN 2*
+
+
+https://github.com/user-attachments/assets/ac552378-92fe-44e7-9cf9-4f9bd6bab4a0
+
