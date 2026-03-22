@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e  # Detiene el script si ocurre un error
+#set -e  # Detiene el script si ocurre un error
 
 echo "=============================="
 echo " Instalación automática proyecto"
