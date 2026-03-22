@@ -2,9 +2,9 @@ DROP DATABASE IF EXISTS `firma_app`;
 CREATE DATABASE IF NOT EXISTS `firma_app`;
 USE `firma_app`;
 
-DROP TABLE IF EXISTS `Users`;
+DROP TABLE IF EXISTS `users`;
 
-CREATE TABLE `Users` (
+CREATE TABLE `users` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nameUser` varchar(50) NOT NULL,
   `emailUser` varchar(50) NOT NULL,
@@ -15,7 +15,7 @@ CREATE TABLE `Users` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-INSERT INTO `Users` (nameUser, emailUser, passUser, rolUser, dniUser, atr) VALUES
+INSERT INTO `users` (nameUser, emailUser, passUser, rolUser, dniUser, atr) VALUES
 	('Steve','steve@gmail.com','qzYfGd_vSr6FhBtk5da5qP3JxIc_m_BReuKOFxpEVYU', 'ADMIN','12345678A', NULL),
   ('David','david1@gmail.com','FnAN4mnrSDPZ8mGpaA1au-FriOlj07ShT7dKw4oNfPo','CLIENT','23456789B', NULL),
   ('Luis','luis@gmail.com','WbYb3OwXLi6LV_B_llWFEneEC3kWwu7neWn4adYyqh0','CLIENT','34567891C', NULL),
