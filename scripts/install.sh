@@ -100,7 +100,7 @@ echo "WAITING FOR LAMPP"
 sleep 8
 echo "LAMPP STARTED"
 
-$XAMPP_PATH/bin/mysqladmin -u root password $MYSQL_PASS" 2>/dev/null
+$XAMPP_PATH/bin/mysqladmin -u root password $MYSQL_PASS 2>/dev/null
 
 $XAMPP_PATH/bin/mysql -u$MYSQL_USER -p$MYSQL_PASS -e "CREATE DATABASE IF NOT EXISTS $DB_NAME;"
 
