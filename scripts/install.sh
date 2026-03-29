@@ -94,6 +94,8 @@ chmod a+x $INSTALLER
 
 chmod a+x $XAMPP_PATH/lampp
 
+echo "STARTING LAMPP (THIS WILL TAKE A WHILE)"
+
 $XAMPP_PATH/lampp start
 
 echo "WAITING FOR LAMPP"
