@@ -85,18 +85,20 @@ function buildTable(data, currentPageNum) {
   a.className = 'button';
   main.appendChild(a);
 
-  var b = document.createElement('a');
-  var linkTextb = document.createTextNode("Filter");
-  b.appendChild(linkTextb);
-  b.title = "Filter";
-  b.id = "filterPDF";
-  b.href = "filter.html";
-  b.className = 'button';
-  main.appendChild(b);
+  if((datosUsuario.rolUser === "ADMIN") || (datosUsuario.rolUser === "FIRMA")){
+    var b = document.createElement('a');
+    var linkTextb = document.createTextNode("Filter");
+    b.appendChild(linkTextb);
+    b.title = "Filter";
+    b.id = "filterPDF";
+    b.href = "filter.html";
+    b.className = 'button';
+    main.appendChild(b);
+  }
 
-  if((datosUsuario.rolUser === "CLIENT")){
-    document.getElementById("filterPDF").setAttribute('hidden', "hidden");
-  }  
+  //if((datosUsuario.rolUser === "CLIENT")){
+  //  document.getElementById("filterPDF").setAttribute('hidden', "hidden");
+  //}  
 
   var c = document.createElement('a');
   var linkTextc = document.createTextNode("Stamp Control");
