@@ -9,20 +9,21 @@
   
 </head>
 <body>
-  <p>CARD</p>
+  <main class="legacy-shell">
+    <section class="legacy-hero legacy-hero--compact">
+      <div class="eyebrow">PDFs</div>
+      <h1>Lectura de tarjeta</h1>
+      <p>Recupera datos de la tarjeta con una pantalla uniforme y enfocada en la acción.</p>
+    </section>
 
-    <h1>
-        This is the card reading page.
-    </h1>
-    
-    <main id="main-container">
-
-    </main>
-
-    <div id="button-container">
-      <button id="readCard" onclick="sendData()">Read Card</button>
-      <button onclick="location.href='table.html?page=1'" type="button">Cancel</button>
-    </div>
+    <section class="legacy-panel">
+      <main id="main-container"></main>
+      <div id="button-container" class="legacy-actions">
+        <button id="readCard" onclick="sendData()">Read Card</button>
+        <button onclick="location.href='table.html?page=1'" type="button">Cancel</button>
+      </div>
+    </section>
+  </main>
 
   <script src="card.js"></script>
 

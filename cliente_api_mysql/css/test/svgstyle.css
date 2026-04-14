@@ -1,31 +1,22 @@
+@import url('../style.css');
+
 body {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
+  min-height: 100vh;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 p {
-  font-family: helvetica;
-  font-size: 24px;
+  font-size: 1.05rem;
   text-align: center;
-  margin: 25px;
+  margin: 0.75rem 0;
 }
 
 .small {
-  font-family: helvetica;
-  font-size: 18px;
+  font-size: 0.92rem;
   text-align: center;
-  margin: 25px;
+  margin: 0.75rem 0 0;
 }
 
 button {
-  background-color: #008CBA;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  font-size: 16px;
+  margin-top: 0.5rem;
 }

@@ -8,32 +8,31 @@
   <title>Firma Segura APP</title>
 </head>
 <body>
-  <h1>Gestionar documentos PDF</h1>
-  <p>PDF TABLE</p>
+  <main class="legacy-shell">
+    <section class="legacy-hero">
+      <div class="eyebrow">PDFs</div>
+      <h1>Gestionar documentos PDF</h1>
+      <p>Listado centralizado de documentos con navegación clara y aspecto uniforme.</p>
+      <div class="legacy-actions">
+        <button onclick="location.href='../index.html'" type="button">Inicio</button>
+        <a href="card.html" class="button">Card Control</a>
+      </div>
+    </section>
 
-  <main id="main-container">
-  <!-- main page content -->
-  
-  <button onclick="location.href='../index.html'" type="button">Main</button>
-  <!--<a id="createPDF" href="create.html" class="button">Create</a> 
-  <a id="filterPDF" href="filter.html" class="button">Filter</a>
-  <a id="stampControl" href="stampControl.html" class="button">Stamp Control</a>-->
-  <a id="cardControl" href="card.html" class="button"> Card Control</a>
-  
+    <section class="legacy-panel">
+      <table id="mytable">
+          <thead>
+          <tr><th>Doc Name</th><th>User Name</th><th>Actions</th></tr>
+          </thead>
+          <tbody></tbody>
+      </table>
 
-  </main>  
-
-  <table id="mytable">
-      <thead>
-      <tr><th>Doc Name</th><th>User Name</th><th>Actions</th></tr>
-      </thead>
-      <tbody></tbody>
-  </table>
-
-  <div id="pag" class="pagination">
-    <a id="pagePrev" class="button" href="#">Prev</a>
-    <a id="pageNext" class="button" href="#">Next</a>
-  </div>
+      <div id="pag" class="pagination">
+        <a id="pagePrev" class="button" href="#">Prev</a>
+        <a id="pageNext" class="button" href="#">Next</a>
+      </div>
+    </section>
+  </main>
 
   <script src="table.js"></script>
 

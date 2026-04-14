@@ -8,26 +8,29 @@
   <title>Firma Segura APP</title>
 </head>
 <body>
-  <h1>Gestionar datos de Usuarios</h1>
-  <p>USERS TABLE</p>
+  <main class="legacy-shell">
+    <section class="legacy-hero">
+      <div class="eyebrow">Usuarios</div>
+      <h1>Gestionar datos de usuarios</h1>
+      <p>Listado paginado con una presentación uniforme, clara y preparada para administración.</p>
+      <div class="legacy-actions">
+        <button onclick="location.href='../index.html'" type="button">Inicio</button>
+      </div>
+    </section>
 
-  <main id="main-container">
-    <!-- main page content -->
-     <button onclick="location.href='../index.html'" type="button">Main</button>
+    <section class="legacy-panel">
+      <table id="mytable">
+          <thead>
+          <tr><th>User Name</th><th>Role</th><th>Action</th></tr>
+          </thead>
+          <tbody></tbody>
+      </table>
+      <div id="pag" class="pagination">
+        <a id="pagePrev" class="button" href="#">Prev</a>
+        <a id="pageNext" class="button" href="#">Next</a>
+      </div>
+    </section>
   </main>
-  <!-- <button onclick="location.href='../index.html'" type="button">Main</button> -->
-  <!--<a href="create.html" class="button">Create</a> -->
-
-  <table id="mytable">
-      <thead>
-      <tr><th>User Name</th><th>Role</th><th>Action</th></tr>
-      </thead>
-      <tbody></tbody>
-  </table>
-  <div id="pag" class="pagination">
-    <a id="pagePrev" class="button" href="#">Prev</a>
-    <a id="pageNext" class="button" href="#">Next</a>
-  </div>
 
   <script src="table_pag.js"></script>
 

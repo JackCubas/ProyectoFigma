@@ -9,37 +9,41 @@
     <link rel="stylesheet" href="../css/sign.css">
 </head>
 <body>
-    <main id="main-container">
-    
-    </main>
+    <main class="legacy-shell">
+        <section class="legacy-hero legacy-hero--compact">
+            <div class="eyebrow">PDFs</div>
+            <h1>Firma manuscrita</h1>
+            <p>Captura la firma y genera el PDF dentro de una presentación más limpia.</p>
+        </section>
 
-    <hr>
-    <div id="signature-body">
-        <div class="signature-container">
-            <canvas id="signature-pad" width="400" height="200"></canvas>
-            <div class="controls">
-                <select id="stroke-style">
-                    <option value="pen">Pen</option>
-                    <option value="brush">Brush</option>
-                </select>
+        <section class="legacy-panel">
+            <main id="main-container"></main>
+            <div id="signature-body">
+                <div class="signature-container">
+                    <canvas id="signature-pad" width="400" height="200"></canvas>
+                    <div class="controls">
+                        <select id="stroke-style">
+                            <option value="pen">Pen</option>
+                            <option value="brush">Brush</option>
+                        </select>
 
-                <button id="clear">Clear</button>
-                <button id="export-png">Export as PNG</button>
-                <button id="export-jpeg">Export as JPEG</button>
+                        <button id="clear">Clear</button>
+                        <button id="export-png">Export as PNG</button>
+                        <button id="export-jpeg">Export as JPEG</button>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
 
-    <hr>
-
-    <div id="button-container">
-        <button id="savePDF" onclick="saveSignatureAndInsertIntoPDF()">Save Signature and Insert into PDF</button>
-        <button id="saveServer" onclick="saveToServer()">Save to Server</button>
-        <label style="margin-left:10px;">P12 (PKCS#12): <input type="file" id="p12file" accept=".p12,.pfx"></label>
-        <label>Password: <input type="password" id="p12password"></label>
-        <button id="padesSign" onclick="padesSign()">Sign PAdES (PKCS#7)</button>
-        <button id="delete" onclick="deleteDocument()">Delete</button>   
-    </div>
+            <div id="button-container" class="legacy-actions">
+                <button id="savePDF" onclick="saveSignatureAndInsertIntoPDF()">Save Signature and Insert into PDF</button>
+                <button id="saveServer" onclick="saveToServer()">Save to Server</button>
+                <label style="margin-left:10px;">P12 (PKCS#12): <input type="file" id="p12file" accept=".p12,.pfx"></label>
+                <label>Password: <input type="password" id="p12password"></label>
+                <button id="padesSign" onclick="padesSign()">Sign PAdES (PKCS#7)</button>
+                <button id="delete" onclick="deleteDocument()">Delete</button>
+            </div>
+        </section>
+    </main>
     
     <script src="https://cdn.jsdelivr.net/npm/node-forge@1.3.1/dist/forge.min.js"></script>
     <script src="pades_sign.js"></script>

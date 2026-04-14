@@ -9,12 +9,15 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.js"></script>
 </head>
 <body>
-  <p>MODIFY</p>
+  <main class="legacy-shell">
+    <section class="legacy-hero legacy-hero--compact">
+      <div class="eyebrow">Usuarios</div>
+      <h1>Modificar usuario</h1>
+      <p>Edición de usuario con una interfaz uniforme y clara.</p>
+    </section>
 
-    <h1>
-        This is the modify users page.
-    </h1>
-    <div class="create-blog content">
+    <section class="legacy-panel">
+      <div class="create-blog content">
         <form id="form">
             <lable for="nameUser">Name:</lable>
             <input type="text" id="nameUser" name="nameUser" maxlength="50" minlength="2" required>
@@ -29,13 +32,11 @@
             </select>
             <lable for="dniUser">DNI:</lable>
             <input type="text" pattern="[0-9]{8}[A-Za-z]{1}" id="dniUser" name="dniUser" maxlength="9" minlength="9" required>
-            <!--<button>Submit</button>-->
         </form>
-         <!-- <button onclick="location.href='table_pag.html?page=1'" type="button">Cancel</button>-->
-        <div id="button-container">
-      
-        </div>
-    </div>
+        <div id="button-container"></div>
+      </div>
+    </section>
+  </main>
 
   <script src="modify.js"></script>
 

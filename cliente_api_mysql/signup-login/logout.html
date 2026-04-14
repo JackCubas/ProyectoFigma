@@ -1,20 +1,29 @@
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/style.css">
-        <title>PDP</title>
+        <title>Firma Segura APP</title>
     </head>
     <body>
-        <h1>
-            This is the logout page.
-        </h1>
-        <div class="create-blog content">
-            <form id="form" onsubmit="sendData()">
-                <button>Submit</button>
-            </form>
-            <button onclick="location.href='../index.html'" type="button">Cancel</button>
-        </div>
+        <main class="legacy-shell">
+            <section class="legacy-hero legacy-hero--compact">
+                <div class="eyebrow">Sesión</div>
+                <h1>Cerrar sesión</h1>
+                <p>Finaliza la sesión actual para volver al estado de acceso restringido.</p>
+            </section>
+
+            <section class="legacy-panel">
+                <div class="create-blog content">
+                    <form id="form" onsubmit="sendData()">
+                        <button>Submit</button>
+                    </form>
+                    <div class="legacy-actions">
+                        <button onclick="location.href='../index.html'" type="button">Cancelar</button>
+                    </div>
+                </div>
+            </section>
+        </main>
 
         <script src="logout.js"></script>
 

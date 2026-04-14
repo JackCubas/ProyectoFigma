@@ -8,15 +8,75 @@
   <title>Firma Segura APP</title>
 </head>
 <body>
-  <h1>Firma Segura APP</h1>
+  <main class="page-shell">
+    <section class="hero-panel">
+      <div class="hero-copy">
+        <div class="eyebrow">Firma digital segura</div>
+        <h1>Una portada limpia, sobria y orientada a confianza.</h1>
+        <p class="hero-text">
+          Accede al sistema de usuarios y PDFs desde una interfaz minimalista,
+          pensada para transmitir orden, control y seguridad desde el primer vistazo.
+        </p>
 
-  <main id="main-container">
-    <!-- main page content -->
-    <button id="loginButton" onclick="location.href='./signup-login/login.html'" type="button">Login</button>
-    <button id="logoutButton" onclick="location.href='./signup-login/logout.html'" type="button">LogOut</button>
-    <button id="signupButton" onclick="location.href='./signup-login/signup.html'" type="button">SignUp</button>
-    <button id="userButton" onclick="location.href='./users/table_pag.html?page=1'" type="button">Users Pag</button>
-    <button id="pdfButton" onclick="location.href='./pdfs/table.html?page=1'" type="button">PDFs</button> 
+        <div class="action-grid" aria-label="Accesos principales">
+          <button id="loginButton" class="action-button action-button-primary" onclick="location.href='./signup-login/login.html'" type="button">Iniciar sesión</button>
+          <button id="signupButton" class="action-button action-button-secondary" onclick="location.href='./signup-login/signup.html'" type="button">Crear cuenta</button>
+          <button id="logoutButton" class="action-button action-button-secondary" onclick="location.href='./signup-login/logout.html'" type="button">Cerrar sesión</button>
+          <button id="userButton" class="action-button action-button-ghost" onclick="location.href='./users/table_pag.html?page=1'" type="button">Gestión de usuarios</button>
+          <button id="pdfButton" class="action-button action-button-ghost" onclick="location.href='./pdfs/table.html?page=1'" type="button">Gestión de PDFs</button>
+        </div>
+      </div>
+
+      <aside class="status-card" aria-live="polite">
+        <div class="status-icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64" role="img" focusable="false">
+            <path d="M32 8 14 16v14c0 12 8 22 18 26 10-4 18-14 18-26V16L32 8Z" />
+            <path d="M24 31h16v13H24z" />
+            <path d="M28 31v-4a4 4 0 0 1 8 0v4" />
+          </svg>
+        </div>
+        <div class="status-copy">
+          <p class="status-label">Estado de acceso</p>
+          <strong id="sessionStatus">Sesión no iniciada</strong>
+          <p id="sessionDescription" class="status-description">
+            Inicia sesión para habilitar las herramientas administrativas.
+          </p>
+        </div>
+
+        <div class="status-metrics">
+          <article>
+            <span>Usuarios</span>
+            <strong>Controlado</strong>
+          </article>
+          <article>
+            <span>Firmas</span>
+            <strong>Verificadas</strong>
+          </article>
+          <article>
+            <span>Acceso</span>
+            <strong id="sessionRole">Restringido</strong>
+          </article>
+        </div>
+      </aside>
+    </section>
+
+    <section class="info-grid" aria-label="Resumen del sistema">
+      <article class="info-card">
+        <p class="card-kicker">Seguridad</p>
+        <h2>Interfaz discreta y confiable</h2>
+        <p>Paleta neutra, contrastes suaves y estructura clara para evitar ruido visual.</p>
+      </article>
+      <article class="info-card">
+        <p class="card-kicker">Operativa</p>
+        <h2>Acceso directo a módulos clave</h2>
+        <p>Usuarios y PDFs quedan accesibles desde un único punto de entrada, sin fricción.</p>
+      </article>
+      <article class="info-card">
+        <p class="card-kicker">Confianza</p>
+        <h2>Estado visible en tiempo real</h2>
+        <p>La pantalla muestra si la sesión está activa y ajusta la navegación según el rol.</p>
+      </article>
+    </section>
   </main>
   <script src="index.js"></script>
 

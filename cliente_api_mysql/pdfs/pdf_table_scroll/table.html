@@ -4,29 +4,32 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../../css/style.css">
   <title>Firma Segura APP</title>
 </head>
 <body>
-  <h1>Gestionar documentos PDF</h1>
-  <p>PDF TABLE</p>
+  <main class="legacy-shell">
+    <section class="legacy-hero">
+      <div class="eyebrow">PDFs</div>
+      <h1>Tabla de documentos</h1>
+      <p>Vista de referencia para pruebas y navegación con la misma línea visual.</p>
+      <div class="legacy-actions">
+        <button onclick="location.href='../../index.html'" type="button">Inicio</button>
+        <a href="create.html" class="button">Create</a>
+        <a href="filter.html" class="button">Filter</a>
+        <a href="stampControl.html" class="button">Stamp Control</a>
+      </div>
+    </section>
 
-  <main id="main-container">
-  <!-- main page content -->
-  
-  <button onclick="location.href='../index.html'" type="button">Main</button>
-  <a href="create.html" class="button">Create</a> 
-  <a href="filter.html" class="button">Filter</a>
-  <a href="stampControl.html" class="button">Stamp Control</a>
-
-  </main>  
-
-  <table id="mytable">
-      <thead>
-      <tr><th>Doc Name</th><th>User Name</th><th>Actions</th></tr>
-      </thead>
-      <tbody></tbody>
-  </table>
+    <section class="legacy-panel">
+      <table id="mytable">
+          <thead>
+          <tr><th>Doc Name</th><th>User Name</th><th>Actions</th></tr>
+          </thead>
+          <tbody></tbody>
+      </table>
+    </section>
+  </main>
 
   <script src="table.js"></script>
 

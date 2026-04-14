@@ -1,36 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Firma Segura APP</title>
 </head>
 <body>
-    <h1>This is the modify PDF page</h1>
+    <main class="legacy-shell">
+        <section class="legacy-hero legacy-hero--compact">
+            <div class="eyebrow">PDFs</div>
+            <h1>Modificar documento</h1>
+            <p>Actualiza los datos del documento desde una estructura visual consistente.</p>
+        </section>
 
-    <form accept-charset="utf-8" enctype="multipart/form-data">
-        <div class="formgroup container-fluid">
-            <label for="name">Name</label>
-            <input id="name" type="text" name="name" maxlength="50" required/>
-        </div>
+        <section class="legacy-panel">
+            <form accept-charset="utf-8" enctype="multipart/form-data">
+                <div class="formgroup container-fluid">
+                    <label for="name">Name</label>
+                    <input id="name" type="text" name="name" maxlength="50" required/>
+                </div>
 
-        <select id="docEstado" name="docEstado">
-            <option value="VALIDATED">VALIDATED</option>
-            <option value="PENDING">PENDING</option>
-            <option value="REJECTED">REJECTED</option>
-        </select>
+                <select id="docEstado" name="docEstado">
+                    <option value="VALIDATED">VALIDATED</option>
+                    <option value="PENDING">PENDING</option>
+                    <option value="REJECTED">REJECTED</option>
+                </select>
 
-        <p>
-        In case you want to change your document, select a new file:
-        </p>
-        <input type="file" id="file" />
-    </form>
-    <!--<button onclick=sendData()>Submit</button>-->
-    <!--<button onclick="location.href='table.html'" type="button">Cancel</button>-->
-    <div id="button-container">
-      
-    </div>
+                <p>In case you want to change your document, select a new file:</p>
+                <input type="file" id="file" />
+            </form>
+            <div id="button-container"></div>
+        </section>
+    </main>
 <script src="modify.js"></script>
 </body>
 </html>

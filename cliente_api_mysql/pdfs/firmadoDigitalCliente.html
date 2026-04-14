@@ -12,21 +12,23 @@
   <script src="https://unpkg.com/cookiejs/dist/cookie.min.js"></script>
 </head>
 <body>
-  <h1>This is the firmado digital del cliente PDF page</h1>
+  <main class="legacy-shell">
+    <section class="legacy-hero legacy-hero--compact">
+      <div class="eyebrow">PDFs</div>
+      <h1>Firma digital del cliente</h1>
+      <p>Autenticación y firma del cliente dentro de una pantalla más uniforme.</p>
+    </section>
 
-  <main id="main-container">
-    
+    <section class="legacy-panel">
+      <main id="main-container"></main>
+
+      <div id="button-container" class="legacy-actions">
+        <button id="webeid-auth-button">Authenticate</button>
+        <button id="webeid-sign-button">Sign document</button>
+        <button id="webeid-cert-button">Get certificate</button>
+      </div>
+    </section>
   </main>
-
-  <div id="button-container">
-
-    <button id="webeid-auth-button">Authenticate</button>
-
-    <button id="webeid-sign-button">Sign document</button>
-
-    <button id="webeid-cert-button">Get certificate</button>
-      
-  </div>
 
   <script src="firmadoDigitalCliente_out.js"></script>
   <!--<script type="module" src="firmadoDigitalCliente.js"></script>-->

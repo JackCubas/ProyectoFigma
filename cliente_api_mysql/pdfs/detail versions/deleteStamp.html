@@ -1,17 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
     <title>Firma Segura APP</title>
 </head>
 <body>
-    <h1>
-        This is the delete stamp page.
-    </h1>
-    <button onclick=sendData()>Delete</button>
-    <button onclick="location.href='table.html'" type="button">Cancel</button>
+    <main class="legacy-shell">
+        <section class="legacy-hero legacy-hero--compact">
+            <div class="eyebrow">PDFs</div>
+            <h1>Eliminar sello</h1>
+            <p>Confirmación de borrado con una interfaz más coherente.</p>
+        </section>
+
+        <section class="legacy-panel">
+            <div class="legacy-actions">
+                <button onclick="sendData()">Delete</button>
+                <button onclick="location.href='table.html'" type="button">Cancel</button>
+            </div>
+        </section>
+    </main>
 <script src="deleteStamp.js"></script>
 </body>
 </html>

@@ -1,40 +1,44 @@
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/style.css">
-        <title>PDP</title>
+        <title>Firma Segura APP</title>
     </head>
     <body>
-        <h1>
-            This is the filter page.
-        </h1>
-        <div class="create-blog content">
-            <form id="form" onsubmit="sendData()">
-                <!-- action="/moviesCreate" method="POST"  -->
-                <lable for="emailUser">Email:</lable>
-                <input type="text" id="emailUser" name="emailUser">
-                <lable for="nameUser">User name:</lable>
-                <input type="text" id="nameUser" name="nameUser">
-                <lable for="docName">Document name:</lable>
-                <input type="text" id="docName" name="docName">
-                <lable for="estado">Estado:</lable>
-                <input type="text" id="estado" name="estado">
-                <button>Submit</button>
-            </form>
-            <button onclick="location.href='table.html?page=1'" type="button">Cancel</button>
-        </div>
+        <main class="legacy-shell">
+            <section class="legacy-hero legacy-hero--compact">
+                <div class="eyebrow">PDFs</div>
+                <h1>Filtrar documentos</h1>
+                <p>Filtrado de documentos con una maqueta más uniforme y legible.</p>
+            </section>
 
-        <main id="main-container">
-            
+            <section class="legacy-panel">
+                <div class="create-blog content">
+                    <form id="form" onsubmit="sendData()">
+                        <lable for="emailUser">Email:</lable>
+                        <input type="text" id="emailUser" name="emailUser">
+                        <lable for="nameUser">User name:</lable>
+                        <input type="text" id="nameUser" name="nameUser">
+                        <lable for="docName">Document name:</lable>
+                        <input type="text" id="docName" name="docName">
+                        <lable for="estado">Estado:</lable>
+                        <input type="text" id="estado" name="estado">
+                        <button>Submit</button>
+                    </form>
+                    <button onclick="location.href='table.html?page=1'" type="button">Cancel</button>
+                </div>
+
+                <main id="main-container"></main>
+
+                <table id="mytable">
+                    <thead>
+                    <tr><th>Doc Name</th><th>User Name</th><th>Estado</th><th>Action</th></tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </section>
         </main>
-
-        <table id="mytable">
-            <thead>
-            <tr><th>Doc Name</th><th>User Name</th><th>Estado</th><th>Action</th></tr>
-            </thead>
-            <tbody></tbody>
-        </table>
 
         <script src="filter.js"></script>
 
