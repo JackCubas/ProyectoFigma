@@ -15,6 +15,13 @@ Las tecnologías a emplear son las siguientes:
 - Para frontend: Javascript
 - Para backend: Node.js
 
+# Como entrar en la aplicación una vez installado
+URL: https://localhost
+Usuario ADMIN - Correo: steve@gmail.com - Pass: stevePass
+Usuario FIRMA - Correo: robert@gmail.com - Pass: robertPass
+Usuario CLIENT 1 - Correo: david1@gmail.com - Pass: david1Pass
+Usuario CLIENT 2 - Correo: luis@gmail.com - Pass: luisPass
+
 # Videotutoriales
 Adicionalmente al código producto del desarrollo de este proyecto también se han generado una serie de tutoriales en formato video para enseñar el proceso de elaboración de la aplicación. Estos videos se dividirá por clases de la 1 a la 8, teniendo en principio 2 lecciones por clase.
 
