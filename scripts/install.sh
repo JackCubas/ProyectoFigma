@@ -8,12 +8,12 @@ echo "=============================="
 
 # Verificar si es root
 if [ "$EUID" -ne 0 ]; then
-  echo "Por favor ejecuta como root: sudo ./install_proyecto.sh"
+  echo "Por favor ejecuta como root: sudo ./install.sh"
   exit 1
 fi
 
-echo "Actualizando sistema..."
-apt update -y && apt upgrade -y
+#echo "Actualizando sistema..."
+#apt update -y && apt upgrade -y
 
 echo "Instalando dependencias básicas..."
 apt install -y curl git build-essential unzip wget
