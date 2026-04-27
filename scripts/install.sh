@@ -32,6 +32,11 @@ cd /tmp
 wget -q https://github.com/JackCubas/ProyectoFigma/archive/refs/heads/main.zip
 unzip -q main.zip
 
+
+##############################################################
+#Instalando servidor frontend
+echo "Instalando servidor frontend"
+
 echo "Instalando Apache..."
 apt install -y apache2
 
@@ -73,6 +78,10 @@ a2ensite localhost-ssl.conf
 
 echo "Reiniciando Apache..."
 systemctl reload apache2
+
+##############################################################
+#Instalando y ejecutando servidor backend node js y base de datos
+echo "Instalando y ejecutando servidor backend node js y base de datos"
 
 echo "Instalando base de datos..."
 cd /tmp/ProyectoFigma-main/node_js_api_mysql
